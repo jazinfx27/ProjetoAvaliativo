@@ -1,0 +1,43 @@
+DER - Diagrama Entidade Relacionamento
+
+TABELAS E RELACIONAMENTOS:
+
+1. usuarios
+   - id (PK)
+   - nome
+   - usuario
+   - senha
+
+2. clientes
+   - id (PK)
+   - nome
+   - email
+
+3. produtos
+   - id (PK)
+   - nome
+   - preco
+   - estoque
+
+4. vendas
+   - id (PK)
+   - cliente_id (FK → clientes.id)
+   - data_venda
+
+5. itens_venda
+   - id (PK)
+   - venda_id (FK → vendas.id)
+   - produto_id (FK → produtos.id)
+   - quantidade
+   - preco_unitario
+
+RELACIONAMENTOS:
+
+- Um cliente pode realizar várias vendas (1:N)
+- Uma venda pode ter vários itens (1:N)
+- Um item de venda está vinculado a um produto (N:1)
+- Um item de venda está vinculado a uma venda (N:1)
+
+Observação:
+- Todos os relacionamentos são do tipo "chave estrangeira" (FOREIGN KEY) no MySQL.
+- A tabela de usuários é usada apenas para login e controle de acesso.

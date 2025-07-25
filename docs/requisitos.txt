@@ -1,0 +1,23 @@
+REQUISITOS DO SISTEMA - LOJA DE ROUPAS
+
+REQUISITOS FUNCIONAIS (RF):
+
+RF01 - O sistema deve permitir o login de usuários com autenticação por senha.
+RF02 - O sistema deve permitir o cadastro, listagem, edição e exclusão de clientes.
+RF03 - O sistema deve permitir o cadastro, listagem, edição e exclusão de produtos.
+RF04 - O sistema deve registrar uma venda com múltiplos itens.
+RF05 - O sistema deve armazenar o total da venda com base na soma dos itens.
+RF06 - O sistema deve permitir consultar vendas realizadas.
+
+REQUISITOS NÃO FUNCIONAIS (RNF):
+
+RNF01 - O sistema deve ser desenvolvido com interface gráfica em Tkinter.
+RNF02 - O banco de dados deve ser gerenciado com MySQL.
+RNF03 - A arquitetura do projeto deve seguir o padrão MVC (Model - View - Controller).
+RNF04 - As credenciais do banco devem ser configuradas em um arquivo .env.
+RNF05 - O sistema deve funcionar em ambiente desktop (local).
+
+OBSERVAÇÕES:
+
+- O sistema deve ser simples, funcional e intuitivo.
+- Toda a comunicação com o banco deve ser feita de forma segura e eficiente.

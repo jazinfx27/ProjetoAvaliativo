@@ -1,0 +1,32 @@
+ALGORITMO DO SISTEMA DE CONTROLE DE LOJA DE ROUPAS
+
+1. INÍCIO
+
+2. Exibir janela de login
+   - Usuário insere nome de usuário e senha
+   - Sistema verifica autenticação no banco de dados
+
+3. Se login for válido:
+   - Abrir menu principal com 3 opções:
+     a) Clientes
+     b) Produtos
+     c) Vendas
+
+4. Se o usuário clicar em "Clientes":
+   - Exibir formulário com campos de nome e email
+   - Opções: cadastrar novo cliente, listar clientes
+
+5. Se o usuário clicar em "Produtos":
+   - Exibir formulário com campos de nome, preço e estoque
+   - Opções: cadastrar novo produto, listar produtos
+
+6. Se o usuário clicar em "Vendas":
+   - Exibir formulário com ID do cliente, ID do produto, quantidade e preço unitário
+   - Registrar venda com os itens e armazenar no banco
+
+7. Todos os dados são armazenados em tabelas MySQL:
+   - usuarios, clientes, produtos, vendas, itens_venda
+
+8. Encerrar aplicação ao fechar a janela principal
+
+9. FIM
